@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid Box</title>
+  <style>
+    *{
+      margin:0;
+    }
+    header{
+      background-color: black;
+      color:white;
+      padding:20px;
+      text-align: center;
+      font-family: Verdana;
+
+      /* LAYERING */
+      position:relative;
+      z-index: 9;
+      
+    }
+    nav{
+      padding: 20px;
+    }
+
+    .container{
+      padding: 20px;
+      display: grid;
+      grid-template-columns:20% 80% ;
+    }
+
+    #logo
+    {
+      margin-left: -35px;
+      margin-top: -35px;
+
+    }
+
+    .caption{
+      color: white;
+      position: relative;
+      top: -70%;
+      left: 5px;
+    }
+
+   .caption h1{
+     padding:2px;
+     font-family: Helvetica;
+     font-size:2.5em;
+     font-weight:lighter ;
+   }
+
+   .caption h3{
+     padding:2px;
+     font-family: fantasy;
+     font-size:2.5em;
+     font-weight:100 ;
+   }
+
+   .landscape{
+     filter:saturate(0.2)
+   }
+
+   nav{
+     padding: 20px;
+     line-height:30px;
+    
+   }
+
+   section{
+     padding:10px;
+     width:90%;
+
+   }
+
+    button{
+      padding: 10px 20px;
+      color: white;
+      background-color: black;
+      border: none;
+      
+    }
+
+    .photo img{
+      width:100px;
+      height:80px;
+    }
+    .album{
+      display:grid;
+      grid-template-columns: 20% 20%; 
+    }
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+  <header>
+  <h2>Lily Ventures</h2>
+</header> 
+<div class="container">
+  <!-- navigation -->
+  <nav>
+    <img id= "logo" src="images/shirts.jpg" alt= "" width="80px">
+   
+    <h4>Shirts</h4>
+    <h4>Dresses</h4>
+    <h4>Jeans</h4>
+    <h4>Gymwear</h4>
+    <h4>Gymwear</h4>
+    <h4>Blazers</h4>
+    <h4>Shoes</h4>
+  </nav>
+
+  <section>
+    <h3>Jeans</h3>
+    <div class="landscape">
+      <img src="images/shoes1.jpg" alt= "" width="80%">
+      <div class="caption">
+
+      <h1>New Arrivals</h1>
+      <h3>COLLECTION 2020</h3>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+    <!-- photo gallery -->
+    
+    <div class="album">
+      <div class="photo">
+        <img src="images/ankara.jpg">
+        <h4>Ankara Outfit</h4>
+        <h5>$50</h5>
+      </div>
+  
+      <div class="photo">
+        <img src="images/shoes2.jpg">
+        <h4>Red Female boots</h4>
+        <h5>$100</h5>
+      </div>
+    
+      <div class="photo">
+        <img src="images/shirt3.jpg">
+        <h4>Rare Shirt</h4>
+        <h5>$30</h5>
+      </div>
+   
+
+      <div class="photo">
+        <img src="images/haircuts.jpg">
+        <h4>Matte Lipstick</h4>
+        <h5>$15</h5>
+      </div>
+    
+      <div class="photo">
+        <img src="images/jeans2.jpg">
+        <h4>Stock Jeans</h4>
+        <h5>$20</h5>
+      </div>
+    
+      
+      <div class="photo">
+        <img src="images/shirts2.jpg">
+        <h4>Army shirts</h4>
+        <h5>$25</h5>
+      </div>
+    
+      <div class="photo">
+        <img src="images/shoes1.jpg">
+        <h4>Dinner heels</h4>
+        <h5>$45</h5>
+      </div>
+    
+      <div class="photo">
+        <img src="images/jeans2.jpg">
+        <h4>Stock Jeans</h4>
+        <h5>$28</h5>
+      </div>
+
+    </div>
+
+
+   
+  </section>
+
+
+
+</div>
+  
+  
+</body>
+</html>
